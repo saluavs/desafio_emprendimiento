@@ -1,0 +1,42 @@
+.footer {
+  font-family: $poppins;
+  background: $black;
+  color: $white;
+  text-align: center;
+  padding: 2rem;
+
+  &__links {
+    & a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 0.8rem auto;
+  }
+}
+
+  @include respond-to($md-tablet) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        &__copy {
+          display: flex;
+          align-items: center;
+        }
+        &__links {
+          display: flex;
+          align-items: center;
+        }
+        &__link {
+          margin: 0 0.5rem;
+        }
+    }
+}
+
+

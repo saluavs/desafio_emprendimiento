@@ -1,0 +1,22 @@
+.btn {
+    background-color: $orange!important;
+    font-family: $poppins;
+    padding: 0.4rem 0.5rem 0.3rem;
+    border: none;
+    border-radius: 5px;
+  
+  &:hover {
+    background: $white;
+    $color: $black;
+  }
+}
+
+@include respond-to($xl-desktop){
+    .btn {
+        &:hover {
+          display: inline-block;
+          margin-left: 5px;
+        }
+    }
+}
+

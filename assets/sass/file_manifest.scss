@@ -1,0 +1,15 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animation';
+@import 'base/reset';
+
+@import 'components/buttons';
+//@import 'components/inputs';
+
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/navbar';
+
+@import 'vendors/bootstrap-5.0.1/scss/bootstrap.scss';

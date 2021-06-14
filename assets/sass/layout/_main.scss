@@ -1,0 +1,114 @@
+.main {
+    &__container {
+        border: 1px solid $black;
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+    &__article {
+        border: 1px dotted $black;
+        padding: 1rem;
+        margin: 1rem 0;
+        &__media {
+            display: flex;
+        }
+        &__item {
+            margin-right: 1rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &--number {
+                display: inline;
+            }
+        }
+    }
+    &__section {
+        text-align: center;
+        
+        &--text{
+            text-align: left;
+        }
+        &__title{
+            background-color: $gray;
+            color: $white;
+            font-family: $poppins;
+            font-weight: $poppons-bold;
+            font-size: $medium;
+        }
+        &__list{   
+            list-style:circle;
+            text-align: left;
+        }
+        &--img-dev{
+            border: 1px solid $black;
+            border-radius: 100%;
+            width: 20rem;
+        }
+    }
+}
+
+.mas-cursos {
+
+    &__img {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__img img {
+        width: auto;
+        height: 200px;
+        border: 1px solid $black;
+        border-radius: 50%;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__icons {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__icons i {
+        padding: 0px 5px;
+    }
+
+    &__text p {
+        font-family: $ubuntu;
+        font-weight: $ubuntu-regular;
+        font-size: $medium;
+        text-align: justify;
+    }
+
+    &__title {
+        text-align: center;
+        background-color: $sable;
+        color: $white;
+        font-family: $poppins;
+        font-weight: $poppons-bold;
+        font-size: $medium;
+    }
+
+    &__animation {
+        text-align: center;
+        padding-bottom: 100px;
+        
+    }
+
+    &__animation1 {
+        animation-name: horizontal;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    &__animation2 {
+        animation-name: rotacion;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-origin: 80% 80%
+    }
+}
